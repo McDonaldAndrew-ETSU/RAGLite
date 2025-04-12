@@ -1,10 +1,10 @@
 # Ignore all data files
 data/*
-deepseek/rag/simple_vector_store/*
+deepreason/rag/simple_vector_store/*
 
 # Ignore Models
-deepseek/models/*
-deepseek/rag/embedding_models/*
+deepreason/models/*
+deepreason/rag/embedding_models/*
 
 # Python artifacts
 __pycache__/
