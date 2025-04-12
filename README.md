@@ -1,6 +1,6 @@
 # RAGLite
 
-> **A Lightweight, Modular RAG Framework Built with a Deep Reasoning 1.5B LM, QLoRA Coldstart Finetuning, and Custom Vector Search - Runs 30+ Tokens/S on Just 4GB VRAM**
+> **A Lightweight, Modular RAG Framework Built that takes LM's as small as 1.5B parameters and transforms them into Deep Reasoning Powerhouses with QLoRA Coldstart Finetuning, and Custom Vector Search - Runing 30+ Tokens/S on Just 4GB VRAM**
 
 ![RAGLite Banner](https://img.shields.io/badge/DeepReasoning-1.5B-blue?style=flat-square)
 ![QLoRA](https://img.shields.io/badge/QLoRA-Finetuned-success?style=flat-square)
@@ -13,7 +13,7 @@
 
 **RAGLite** is a plug-and-play Retrieval-Augmented Generation framework that combines:
 
-- 💡 **Distilled Qwen 1.5B** base model to lightweight, serverless, high-performance LLM (No API's Needed!)
+- 💡 **Any-Size-LM** base models to lightweight, serverless, high-performance LM's (No API's Needed!)
 - 🧠 **QLoRA finetuning** on coldstart .jsonl data
 - 🔎 **Custom vector store** with cosine similarity for fast retrieval
 - ⚙️ **Modular pipeline** for preprocessing, embedding, finetuning, and generation
