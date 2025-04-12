@@ -1,10 +1,14 @@
 # Ignore all data files
 data/*
+!data/placeholder
 deepreason/rag/simple_vector_store/*
+!deepreason/rag/simple_vector_store/placeholder
 
 # Ignore Models
 deepreason/models/*
+!deepreason/models/placeholder
 deepreason/rag/embedding_models/*
+!deepreason/rag/embedding_models/placeholder
 
 # Python artifacts
 __pycache__/
