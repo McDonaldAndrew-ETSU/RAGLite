@@ -31,7 +31,7 @@ cached = "./models/currently_cached_model"
 trained = "./models/qwen_lora_trained"
 
 
-class DeepSeekGenerator:
+class DeepReasonGenerator:
     def __init__(self, model_name_or_path: str, already_quantized: bool = True) -> None:
         start = time.time()
         logger.info("Initializing model...")
@@ -178,7 +178,7 @@ class DeepSeekGenerator:
 
 
 if __name__ == "__main__":
-    llm = DeepSeekGenerator(model_name_or_path=trained, already_quantized=False)
+    llm = DeepReasonGenerator(model_name_or_path=trained, already_quantized=False)
     rag = RAGPipeline(vector_store_dir="./rag/simple_vector_store", generator=llm)
 
     while True:

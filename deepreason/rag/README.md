@@ -12,4 +12,4 @@ This directory represents a lightweight and portable RAG Pipeline. The following
 
 4. `retrieval.py` - Contains the _Retriever_ and _QueryEmbedder_ classes that embeds the user query and retrieves the closest vectors.
 
-5. `rag_pipeline.py` - Contains the _RAGPipeline_ class that builds an appropriate prompt (from `./util/prompts.py`) using a Retrieved vector based on a user query and calls a Generator (in this case our DeepSeek model).
+5. `rag_pipeline.py` - Contains the _RAGPipeline_ class that builds an appropriate prompt (from `./util/prompts.py`) using a Retrieved vector based on a user query and calls a Generator (in this case our DeepReason model).

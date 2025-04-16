@@ -60,7 +60,7 @@ The OrderedVocab you are attempting to save contains holes for indices [6, 364, 
 
 2025-02-08 16:23:32,697 - __main__ - generate_response - Line: 107 - INFO: Generated in 2.12 seconds
 2025-02-08 16:23:32,697 - __main__ - generate_response - Line: 110 - INFO: Avg. Tokens Per Second: 24.12 - Total Response Tokens: 40
-(.venv) deepseek
+(.venv) deepreason
 $ python deep_seek.py
 Unused kwargs: ['_load_in_4bit', '_load_in_8bit', 'quant_method']. These kwargs are not used in <class 'transformers.utils.quantization_config.BitsAndBytesConfig'>.
 `low_cpu_mem_usage` was None, now default to True since model is quantized.
@@ -73,7 +73,7 @@ Unused kwargs: ['_load_in_4bit', '_load_in_8bit', 'quant_method']. These kwargs 
 
 2025-02-08 16:24:01,690 - __main__ - generate_response - Line: 107 - INFO: Generated in 2.17 seconds
 2025-02-08 16:24:01,690 - __main__ - generate_response - Line: 110 - INFO: Avg. Tokens Per Second: 23.85 - Total Response Tokens: 40
-(.venv) deepseek
+(.venv) deepreason
 $ python deep_seek.py
 Unused kwargs: ['_load_in_4bit', '_load_in_8bit', 'quant_method']. These kwargs are not used in <class 'transformers.utils.quantization_config.BitsAndBytesConfig'>.
 `low_cpu_mem_usage` was None, now default to True since model is quantized.
@@ -86,7 +86,7 @@ Unused kwargs: ['_load_in_4bit', '_load_in_8bit', 'quant_method']. These kwargs 
 
 2025-02-08 16:24:14,063 - __main__ - generate_response - Line: 107 - INFO: Generated in 2.23 seconds
 2025-02-08 16:24:14,063 - __main__ - generate_response - Line: 110 - INFO: Avg. Tokens Per Second: 23.01 - Total Response Tokens: 39
-(.venv) deepseek
+(.venv) deepreason
 $ python deep_seek.py
 Unused kwargs: ['_load_in_4bit', '_load_in_8bit', 'quant_method']. These kwargs are not used in <class 'transformers.utils.quantization_config.BitsAndBytesConfig'>.
 `low_cpu_mem_usage` was None, now default to True since model is quantized.
@@ -99,7 +99,7 @@ Unused kwargs: ['_load_in_4bit', '_load_in_8bit', 'quant_method']. These kwargs 
 
 2025-02-08 16:24:32,614 - __main__ - generate_response - Line: 107 - INFO: Generated in 2.37 seconds
 2025-02-08 16:24:32,614 - __main__ - generate_response - Line: 110 - INFO: Avg. Tokens Per Second: 23.16 - Total Response Tokens: 44
-(.venv) deepseek
+(.venv) deepreason
 $ python deep_seek.py
 Unused kwargs: ['_load_in_4bit', '_load_in_8bit', 'quant_method']. These kwargs are not used in <class 'transformers.utils.quantization_config.BitsAndBytesConfig'>.
 `low_cpu_mem_usage` was None, now default to True since model is quantized.

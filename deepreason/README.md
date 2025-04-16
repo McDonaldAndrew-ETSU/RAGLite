@@ -1,6 +1,24 @@
 # Setup and Familiarization
 
-1. Once you have finished downloading all files to the model and put them in the `./models/DeepSeek-R1-Distill-Qwen-1.5B` directory, familiarize yourself with the various directories.
+## Important Libraries
+
+Run the following to ensure you have the correct torch backend:
+
+```bash
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
+pip install bitsandbytes
+pip install 'accelerate>=0.26.0'
+```
+
+These 3 modules (`torch` `torchvision` `torchaudio`) are commented out within `requirements.txt` due to install errors. Running these lines manually should install these dependencies without issue. Once complete, then run:
+
+```bash
+pip install -r requirements.txt
+```
+
+## General
+
+1. Once you have finished downloading all files to for the model and put them in the `./models/DeepSeek-R1-Distill-Qwen-1.5B` directory, familiarize yourself with the various directories.
 
 # `deep_seek.py`
 
@@ -30,7 +48,7 @@ Please follow each method's documentation to find more about the method and what
 
 ```python
 if __name__ == "__main__":
-    llm = DeepSeekGenerator(model_name_or_path=trained, already_quantized=False)
+    llm = DeepReasonGenerator(model_name_or_path=trained, already_quantized=False)
     rag = RAGPipeline(vector_store_dir="./rag/simple_vector_store", generator=llm)
 
     while True:
@@ -54,7 +72,7 @@ if __name__ == "__main__":
   - This directory becomes populated after running, as the class is designed to immediately quantize the model from a model directory and then be used.
   - After the model is quantized and saved in `./currently_cached_model`, you may set the `already_quantized` parameter to `True` so it can pull the Quantized model a lot faster than having to quantize it every time.
 
-3. To run this code, first cd into the `deepseek` directory.
+3. To run this code, first cd into the `deepreason` directory.
 
 4. Run:
 

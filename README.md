@@ -66,9 +66,9 @@ pip install -r requirements.txt
 4. You should not receive any errors trying to install the requirements.txt asking for different python versions for specific dependencies.
    However if you do, I am sorry, you may have to manually handle installing the specific dependencies. Contact me if facing any issues.
 
-## Downloading DeepSeek models from HuggingFace
+## Downloading models from HuggingFace
 
-- You can use any llm from hugging face; this NLP project we have so far been using open-source DeepSeek llms and their Distilled versions of their models.
+- You can use any llm from hugging face; this NLP project we have so far been using open-source llms and their Distilled versions of their models.
 - Here is their HuggingFace repository containing all their models: https://huggingface.co/deepseek-ai
 - The latest DeepSeek models are their `DeepSeek-R1` collection. This is where I use their 1.5B model
 - You may store any regular model architecture within the empty `deepseek/models` directory.
@@ -92,4 +92,4 @@ pip install -r requirements.txt
 
 ## Next Steps
 
-Congratulations! You may now enter the `deepseek` directory to learn the code base and how to use this code.
+Congratulations! You may now enter the `deepreason` directory to learn the code base and how to use this code.
