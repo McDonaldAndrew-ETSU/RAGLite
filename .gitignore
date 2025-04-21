@@ -1,6 +1,12 @@
-# Ignore all data files
-data/*
-!data/placeholder
+# Ignore data files
+data/evaluation_data/*
+!data/evaluation_data/acad_merge_eval.jsonl
+data/Students/*
+data/cleaned_Students/*
+data/*.json
+
+
+
 deepreason/rag/simple_vector_store/*
 !deepreason/rag/simple_vector_store/placeholder
 
