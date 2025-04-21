@@ -1,7 +1,6 @@
 import json
 import random
 from faker import Faker
-from datetime import datetime, timedelta
 from pathlib import Path
 
 fake = Faker()
@@ -108,7 +107,7 @@ def generate_academic_data_entry(index):
 examples = [generate_academic_data_entry(i) for i in range(200)]
 
 # Save to JSONL
-output_path = Path("coldstart_data/academic_advisor_coldstart.jsonl")
+output_path = Path("../../../data/coldstart_data/academic_advisor_coldstart.jsonl")
 output_path.parent.mkdir(parents=True, exist_ok=True)
 
 with output_path.open("w", encoding="utf-8") as f:
