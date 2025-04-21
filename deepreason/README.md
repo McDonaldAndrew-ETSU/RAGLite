@@ -96,17 +96,17 @@ python deep_seek.py
 
 1. Use its README to find out more about the directory.
 
-# `tuning` directory
+# `finetuning` directory
 
 1. Contains `coldstart` directory that contains necessary files to finetune a model on academic coldstart data found in the `data/coldstart_data` directory.
 
-2. Contains `tuning.ipynb` the - contains my painstaking attempts at "taming" the unpredictable quantized 1.5B model. Play around with this if you like. I use a simple string comparison for evaluating performance, which isn't the best for hyperparameter tuning, but **plan to soon use methods like BLEU and ROUGE to make it more accurate**.
+2. Contains `basic_finetuning.ipynb` the - contains my painstaking attempts at "taming" the unpredictable quantized 1.5B model. Play around with this if you like. I use a simple string comparison for evaluating performance, which isn't the best for hyperparameter tuning, but **plan to soon use methods like BLEU and ROUGE to make it more accurate**.
 
-3. Contains logs, csv results, and findings notes based on the output of `tuning.ipynb`
+3. Contains logs, csv results, and findings notes based on the output of `basic_tuning.ipynb`
 
 # Next steps
 
 Congratulations! This should be enough information to help you get started. If any questions please contact me.
 
-- For **tuning the model**, I usually like to create a "tuning" directory for each model, hence the `tuning_for_qwen_1_5` directory.
+- For **tuning the model**, I usually like to create a "finetuning" directory for each model.
 - For **prompt engineering**, this can be done within `util/prompts.py`
