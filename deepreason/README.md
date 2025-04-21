@@ -20,7 +20,7 @@ pip install -r requirements.txt
 
 1. Once you have finished downloading all files to for the model and put them in the `./models/DeepSeek-R1-Distill-Qwen-1.5B` directory, familiarize yourself with the various directories.
 
-# `deep_seek.py`
+# `deepreason.py`
 
 ## Model choices
 
@@ -80,25 +80,29 @@ if __name__ == "__main__":
 python deep_seek.py
 ```
 
+# `eval.ipynb` & `eval.py`
+
+- `eval.py` helps with evaluation of the outputs designated in this file using BLEU and ROUGE.
+- `eval.ipynb` shows the results between a base model output .jsonl file and a trained model output .jsonl file
+  - Initially designed to show results of small amounts of coldstart on a model before training, and after training.
+
 # `util` directory
 
 1. Contains `prompts.py` - contains all methods to help prompt the llm with specific sections from the student data. So far, everything has been adjusted to where is brings back _somewhat consistent_ results. If it consistently brings back awful results for you, I suggest using a higher parameter model, though this current setup has been working for me, again emphasis on the _somewhat_.
 
 2. Contains `stream_stop.py` - contains the class to return and format traditional ChatGPT like responses within your terminal window.
 
-# `tuning_for_qwen_1_5` directory
-
-1. Contains `tuning.ipynb` the - contains my painstaking attempts at "taming" the unpredictable quantized 1.5B model. Play around with this if you like. I use a simple string comparison for evaluating performance, which isn't the best for hyperparameter tuning, but **plan to soon use methods like BLEU and ROUGE to make it more accurate**.
-
-2. Contains logs, csv results, and findings notes based on the output of `tuning.ipynb`
-
-## `coldstart` directory
-
-1. Use its README to find out more about this directory.
-
 # `rag` directory
 
 1. Use its README to find out more about the directory.
+
+# `tuning` directory
+
+1. Contains `coldstart` directory that contains necessary files to finetune a model on academic coldstart data found in the `data/coldstart_data` directory.
+
+2. Contains `tuning.ipynb` the - contains my painstaking attempts at "taming" the unpredictable quantized 1.5B model. Play around with this if you like. I use a simple string comparison for evaluating performance, which isn't the best for hyperparameter tuning, but **plan to soon use methods like BLEU and ROUGE to make it more accurate**.
+
+3. Contains logs, csv results, and findings notes based on the output of `tuning.ipynb`
 
 # Next steps
 

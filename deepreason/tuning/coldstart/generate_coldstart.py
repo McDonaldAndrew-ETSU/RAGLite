@@ -1,7 +1,6 @@
 import json
 import random
 from faker import Faker
-from datetime import datetime, timedelta
 from pathlib import Path
 
 fake = Faker()

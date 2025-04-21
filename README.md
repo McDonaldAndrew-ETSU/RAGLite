@@ -2,11 +2,12 @@
 
 > **A Lightweight, Modular RAG Framework Built that takes LM's as small as 1.5B parameters and transforms them into Deep Reasoning Powerhouses with QLoRA Coldstart Finetuning, and Custom Vector Search - Runing 30+ Tokens/S on Just 4GB VRAM**
 
-![RAGLite Banner](https://img.shields.io/badge/DeepReasoning-1.5B-blue?style=flat-square)
+![Banner](https://img.shields.io/badge/DeepReason-1.5B-blue?style=flat-square)
 ![QLoRA](https://img.shields.io/badge/QLoRA-Finetuned-success?style=flat-square)
 ![RAG](https://img.shields.io/badge/RAG-Enabled-orange?style=flat-square)
 ![RAM](https://img.shields.io/badge/4GB-VRAM-lightgrey?style=flat-square)
-![Portable](https://img.shields.io/badge/Portable-Yes-9cf?style=flat-square)
+![EVAL](https://img.shields.io/badge/BLEU-Eval-lightblue?style=flat-square)
+![EVAL2](https://img.shields.io/badge/ROUGE-Eval-pink?style=flat-square)
 ![License](https://img.shields.io/github/license/McDonaldAndrew-ETSU/RAGLite?style=flat-square)
 
 ---
@@ -19,6 +20,7 @@
 - ⚙️ **Modular pipeline** for preprocessing, embedding, finetuning, and generation
 - ⚡️ **Lightning Fast** functionality at over 30+ tokens generated per second on **just 4GB of VRAM**
 - 🪶 **Featherweight** framework with serverless architecture.
+- 📈 **BLEU & ROUGE** NLP Evaluation Techniques visualizing performance.
 
 > Designed for researchers, students, and developers building local-first, efficient, and powerful AI applications.
 
